@@ -74,10 +74,10 @@ create policy "Users can create their own order items"
 -- Step 7: Insert sample data
 insert into public.food_items (name, description, price, category)
 values
-    ('Burger', 'Classic beef burger with cheese and vegetables', 9.99, 'Main Course'),
-    ('Pizza', 'Margherita pizza with fresh mozzarella', 12.99, 'Main Course'),
-    ('Salad', 'Fresh garden salad with vinaigrette', 7.99, 'Appetizer'),
-    ('Ice Cream', 'Vanilla ice cream with chocolate sauce', 4.99, 'Dessert');
+    ('Burger', 'Classic beef burger with cheese and vegetables', 49.99, 'Main Course'),
+    ('Pizza', 'Margherita pizza with fresh mozzarella', 59.99, 'Main Course'),
+    ('Salad', 'Fresh garden salad with vinaigrette', 34.99, 'Appetizer'),
+    ('Ice Cream', 'Vanilla ice cream with chocolate sauce', 19.99, 'Dessert');
 
 -- Step 8: Create indexes
 create index if not exists idx_food_items_category on public.food_items(category);

@@ -16,7 +16,7 @@ export default function FoodCard({ item, onOrder, loading }: FoodCardProps) {
       <Card.Content style={styles.content}>
         <Text variant="titleMedium" style={styles.name}>{item.name}</Text>
         <Text variant="bodyMedium" style={styles.description}>{item.description}</Text>
-        <Text variant="titleMedium" style={styles.price}>${item.price.toFixed(2)}</Text>
+        <Text variant="titleMedium" style={styles.price}>{item.price.toFixed(2)} Lei</Text>
       </Card.Content>
       <Card.Actions style={styles.actions}>
         <Button

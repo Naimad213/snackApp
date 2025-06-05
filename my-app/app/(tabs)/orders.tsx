@@ -96,7 +96,7 @@ export default function OrdersScreen() {
                 {formatDate(item.created_at)}
               </Text>
               <Text variant="titleMedium" style={styles.total}>
-                Total: ${item.total_amount.toFixed(2)}
+                Total: {item.total_amount.toFixed(2)} Lei
               </Text>
               {item.order_items?.map((orderItem) => (
                 <View key={orderItem.id} style={styles.orderItem}>
@@ -104,7 +104,7 @@ export default function OrdersScreen() {
                     {orderItem.quantity}x {orderItem.food_item?.name}
                   </Text>
                   <Text variant="bodyMedium">
-                    ${(orderItem.price_at_time * orderItem.quantity).toFixed(2)}
+                    {(orderItem.price_at_time * orderItem.quantity).toFixed(2)} Lei
                   </Text>
                 </View>
               ))}

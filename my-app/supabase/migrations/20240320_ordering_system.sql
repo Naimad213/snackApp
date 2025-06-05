@@ -114,16 +114,16 @@ create trigger handle_updated_at
 -- Insert sample food items
 insert into public.food_items (name, description, price, category, image_url)
 values
-    ('Classic Burger', 'Juicy beef patty with fresh vegetables and special sauce', 12.99, 'Burgers', 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd'),
-    ('Cheeseburger', 'Classic burger with melted cheddar cheese', 13.99, 'Burgers', 'https://images.unsplash.com/photo-1553979459-d2229ba7433b'),
-    ('Margherita Pizza', 'Fresh tomatoes, mozzarella, and basil', 14.99, 'Pizza', 'https://images.unsplash.com/photo-1604382354936-07c5d9983bd3'),
-    ('Pepperoni Pizza', 'Classic pizza topped with pepperoni slices', 16.99, 'Pizza', 'https://images.unsplash.com/photo-1628840042765-356cda07504e'),
-    ('Caesar Salad', 'Crisp romaine lettuce with Caesar dressing and croutons', 8.99, 'Salads', 'https://images.unsplash.com/photo-1550304943-4f24f54ddde9'),
-    ('Greek Salad', 'Fresh vegetables with feta cheese and olives', 9.99, 'Salads', 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c'),
-    ('Chocolate Cake', 'Rich chocolate cake with ganache frosting', 6.99, 'Desserts', 'https://images.unsplash.com/photo-1578985545062-69928b1d9587'),
-    ('Tiramisu', 'Classic Italian dessert with coffee and mascarpone', 7.99, 'Desserts', 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9'),
-    ('French Fries', 'Crispy golden fries with sea salt', 4.99, 'Sides', 'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d'),
-    ('Onion Rings', 'Crispy battered onion rings', 5.99, 'Sides', 'https://images.unsplash.com/photo-1581006852262-e4307cf6283a');
+    ('Classic Burger', 'Juicy beef patty with fresh vegetables and special sauce', 49.99, 'Burgers', 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd'),
+    ('Cheeseburger', 'Classic burger with melted cheddar cheese', 54.99, 'Burgers', 'https://images.unsplash.com/photo-1553979459-d2229ba7433b'),
+    ('Margherita Pizza', 'Fresh tomatoes, mozzarella, and basil', 59.99, 'Pizza', 'https://images.unsplash.com/photo-1604382354936-07c5d9983bd3'),
+    ('Pepperoni Pizza', 'Classic pizza topped with pepperoni slices', 64.99, 'Pizza', 'https://images.unsplash.com/photo-1628840042765-356cda07504e'),
+    ('Caesar Salad', 'Crisp romaine lettuce with Caesar dressing and croutons', 34.99, 'Salads', 'https://images.unsplash.com/photo-1550304943-4f24f54ddde9'),
+    ('Greek Salad', 'Fresh vegetables with feta cheese and olives', 39.99, 'Salads', 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c'),
+    ('Chocolate Cake', 'Rich chocolate cake with ganache frosting', 27.99, 'Desserts', 'https://images.unsplash.com/photo-1578985545062-69928b1d9587'),
+    ('Tiramisu', 'Classic Italian dessert with coffee and mascarpone', 29.99, 'Desserts', 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9'),
+    ('French Fries', 'Crispy golden fries with sea salt', 19.99, 'Sides', 'https://images.unsplash.com/photo-1630384060421-cb20d0e0649d'),
+    ('Onion Rings', 'Crispy battered onion rings', 24.99, 'Sides', 'https://images.unsplash.com/photo-1581006852262-e4307cf6283a');
 
 -- Create indexes for better performance
 create index if not exists idx_food_items_category on public.food_items(category);
