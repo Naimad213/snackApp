@@ -1,0 +1,6 @@
+{
+  "name": "iorgasnack",
+  "root": "my-app",
+  "buildCommand": "npx expo export -p web",
+  "outputDirectory": "dist"
+} 

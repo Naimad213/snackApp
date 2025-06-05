@@ -1,0 +1,11 @@
+{
+  "buildCommand": "cd my-app && npx expo export -p web",
+  "outputDirectory": "my-app/dist",
+  "framework": "create-react-app",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+} 
